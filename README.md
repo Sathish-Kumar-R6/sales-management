@@ -84,7 +84,7 @@ Place your seed.csv file and any other csv files inside the `data` folder
 
    - **Route**: `POST /api/refresh`
    - **Description**: Specify a CSV file path to reload data to db.
-   - **Scheduler**: This api also automatically triggers everyday at 00:00 with the specified path
+   - **Scheduler**: This api also automatically triggers everyday at 00:00 with the specified path to csv file
 
 2. **Get Revenue Details with Filters**
 
