@@ -13,6 +13,7 @@
     "express-validator": "^7.2.1",
     "jest-mock-extended": "^4.0.0-beta1",
     "node-cron": "^3.0.3",
+    "swagger-ui-express": "^5.0.1",
     "ts-jest": "^29.2.5",
     "winston": "^3.17.0"
   },
@@ -29,10 +30,11 @@
     "ts:check": "tsc --noEmit",
     "prepare": "husky",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "doc:generate": "node ./swagger.js"
   },
   "lint-staged": {
-    "*.{ts,js,mjml}": [
+    "*.{ts,js,mjml,mjs}": [
       "yarn eslint --fix",
       "yarn prettify"
     ]
@@ -48,6 +50,7 @@
     "@types/node": "^22.10.5",
     "@types/node-cron": "^3.0.11",
     "@types/supertest": "^6.0.2",
+    "@types/swagger-ui-express": "^4.1.7",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.17.0",
     "husky": "^9.1.7",
@@ -57,6 +60,7 @@
     "prettier": "^3.4.2",
     "prisma": "^6.1.0",
     "supertest": "^7.0.0",
+    "swagger-autogen": "^2.23.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.19.0"

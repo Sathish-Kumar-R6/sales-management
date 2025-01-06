@@ -1,0 +1,76 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Sales Management",
+    "description": "Automatically generated API documentation using swagger-autogen",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/api",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/refresh": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "filePath": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/revenue-details": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "start_date",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "end_date",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "product_id",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
