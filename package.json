@@ -11,7 +11,9 @@
     "express": "^4.21.2",
     "express-async-error": "^0.0.2",
     "express-validator": "^7.2.1",
+    "jest-mock-extended": "^4.0.0-beta1",
     "node-cron": "^3.0.3",
+    "ts-jest": "^29.2.5",
     "winston": "^3.17.0"
   },
   "scripts": {
@@ -23,7 +25,11 @@
     "db:push": "npx prisma db push",
     "seed": "ts-node src/seed/generate-seed.ts",
     "prettify": "prettier --write",
-    "commit": "cz"
+    "commit": "cz",
+    "ts:check": "tsc --noEmit",
+    "prepare": "husky",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "lint-staged": {
     "*.{ts,js,mjml}": [
@@ -37,16 +43,20 @@
     "@types/body-parser": "^1.19.5",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.10.5",
     "@types/node-cron": "^3.0.11",
+    "@types/supertest": "^6.0.2",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.17.0",
     "husky": "^9.1.7",
+    "jest": "^29.7.0",
     "lint-staged": "^15.3.0",
     "nodemon": "^3.1.9",
     "prettier": "^3.4.2",
     "prisma": "^6.1.0",
+    "supertest": "^7.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.19.0"
