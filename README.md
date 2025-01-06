@@ -17,6 +17,8 @@ Make sure you have the following installed:
 - Yarn
 - PostgreSQL
 
+Place your seed.csv file and any other csv files inside the `data` folder
+
 ### Installation
 
 1. Clone the repository:
@@ -55,7 +57,8 @@ Make sure you have the following installed:
    ```
 
 6. Seed the database:
-
+   Remember before running this command make sure you have seed.csv file inside `data/seed.csv`
+   
    ```bash
    yarn seed
    ```
