@@ -5,7 +5,7 @@ This a sales manager application to manage the revenue data
 ## Schema diagram
 
 Below image shows the schema diagram for the sales management application
-![image](https://github.com/user-attachments/assets/a15f6714-a8fa-4e47-8c5a-061cb73ab4c7)
+![image](https://github.com/user-attachments/assets/e2f369c8-71e2-4eb7-acd0-6d67203c2bdb)
 
 ## Setup Instructions
 
