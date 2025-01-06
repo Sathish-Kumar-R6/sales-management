@@ -1,0 +1,59 @@
+{
+  "name": "sales-management",
+  "version": "1.0.0",
+  "main": "./src/server.ts",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^6.1.0",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-async-error": "^0.0.2",
+    "express-validator": "^7.2.1",
+    "node-cron": "^3.0.3",
+    "winston": "^3.17.0"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "db:push": "npx prisma db push",
+    "seed": "ts-node src/seed/generate-seed.ts",
+    "prettify": "prettier --write",
+    "commit": "cz"
+  },
+  "lint-staged": {
+    "*.{ts,js,mjml}": [
+      "yarn eslint --fix",
+      "yarn prettify"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/create-config": "^1.4.0",
+    "@eslint/js": "^9.17.0",
+    "@types/body-parser": "^1.19.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.10.5",
+    "@types/node-cron": "^3.0.11",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.17.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
+    "prisma": "^6.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.19.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
