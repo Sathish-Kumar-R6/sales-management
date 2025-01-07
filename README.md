@@ -65,15 +65,16 @@ Place your seed.csv file and any other csv files inside the `data` folder
 
 ### Running the Application
 
-1. To start the development server, use the following command:
-
+1. To generate swagger doc first and start the development server, use the following command:
+   
    ```bash
+   yarn doc:generate
    yarn dev
    ```
 
    The app will be running at http://localhost:3000.
 
-2. Swagger UI:
+3. Swagger UI:
 
    - The Swagger UI will be available at http://localhost:3000/api-docs.
    - It will display the auto-generated API documentation based on your routes and annotations.
