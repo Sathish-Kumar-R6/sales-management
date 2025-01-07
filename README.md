@@ -24,13 +24,13 @@ Place your seed.csv file and any other csv files inside the `data` folder
 1. Clone the repository:
 
    ```bash
-   git clone <your-repository-url>
-   ```
+   git clone https://github.com/Sathish-Kumar-R6/sales-management.git
+```
 
 2. Install the dependencies:
 
    ```bash
-   cd sales-management-app
+   cd sales-management
    yarn
    ```
 
@@ -95,4 +95,4 @@ Place your seed.csv file and any other csv files inside the `data` folder
      - `start_date`: (Optional) Start date for revenue data.
      - `end_date`: (Optional) End date for revenue data.
      - `region`: (Optional) Filter by region.
-     - `product_id`: (Optional) Filter by salesperson.
+     - `product_id`: (Optional) Filter by product.
