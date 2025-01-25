@@ -25,7 +25,7 @@ Place your seed.csv file and any other csv files inside the `data` folder
 
    ```bash
    git clone https://github.com/Sathish-Kumar-R6/sales-management.git
-```
+   ```
 
 2. Install the dependencies:
 
